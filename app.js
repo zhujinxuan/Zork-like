@@ -38,7 +38,6 @@ function Room(name, geoMap){
         console.log("Therefore, you attack yourself")
         obj.suicide.default();
       } else {
-        console.log(obj.enemies)
         var index = parseInt( (Math.random() *obj.enemies.length) );
         console.log(`You are attacking ${obj.enemies[index].name}`)
         console.log(`${obj.enemies[index].name} counterfire back`)
